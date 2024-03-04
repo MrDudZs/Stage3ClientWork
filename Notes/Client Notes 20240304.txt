@@ -1,0 +1,44 @@
+Daud Rozita - Client
+Kuwait - Malaysia sub department - Buisness
+
+
+Slide - 4
+
+Go from manaul to paperless
+ensure documents are tracked
+
+What type of departments will have access to these files?
+
+
+Regulations:
+EDR
+PDSA
+Personel Data Security Act / GDPR
+
+Read up on the GDPR/MDPA
+
+
+Can use anything web-based to complete the task
+
+
+
+Reprot that also alerts weekly
+
+Reprots Generated to Management as and when or during the month 1/2 to end of
+PDF META IS FINE
+
+
+What to be done by next week:
+Propose how we want to develop fetures or show off high level development
+CAN BE WIREFRAME
+
+Adhere to development life-cycle 
+
+Prioritise security over all else for project
+
+Who is the owner? The creator of the file.
+
+Fufill function over all else 
+
+
+Create User Stories based off who uses the system
