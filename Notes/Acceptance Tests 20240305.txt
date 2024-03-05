@@ -1,0 +1,101 @@
+Tuesday 20240305:
+==================================================================================================
+Permission test one:
+
+Users submits a document and becomes the owner of the document
+
+They provide user with permissions to edit the document.
+
+If permissions are correct user can modify
+
+Else user may only be able to view the document
+
+==================================================================================================
+Permission test Two:
+
+User submit document, another user without file permission goes to view the document.
+
+If user goes to view document without permissions and cannot access file - success
+
+Else if user views the file without having permission and can access - fail
+
+
+==================================================================================================
+Permision test Three:
+
+User submits document to the EDRM and is designated as creator.
+
+As creator they will have admin rights with the whole document.
+
+IF user is able to access the file and modify all aspects of the document including submit to archive. - success
+
+Else when created they are unable to view or modify the document - fail
+
+
+==================================================================================================
+Archive Retrival:
+
+User deletes file from main section though due to policy the file must be stored for 7 years.
+
+System stores file on the archive.
+
+If file is deleted from main system and can be located on the archive - success
+
+Else if file is deleted from the main system and is lost - file
+
+==================================================================================================
+Search system:
+
+user looking for files older than 2 years.
+
+If search results shows files older than 2 years ONLY - Succuess
+
+Else if files newer than 2 year appear - fail
+==================================================================================================
+Archive Search:
+User has archived a document on the EDRM due to it not longer being used.
+
+Due to circumstances the file is required by the original client.
+
+The file on the archive is over 2 years old and created by a former emplyoee.
+
+When user goes to search for the file they fillter for older than 2 years and by created by user.
+
+IF the file is located on the system after the orginal creator leaves - success
+
+IF the file cannot be located or accessed after orginal creator leaves - fail
+
+==================================================================================================
+Emails\Monthly Management:
+
+User uploads a file to the system.
+
+When a user uploads a file to the system them are given a bi-weekly and monthly update on their files
+
+If file is older than 2 weeks or 1 month send email to file owner IF file is recieved - Success
+
+Else email is not sent to file owner - fail
+
+==================================================================================================
+Audit trail:
+User uploads file which starts an audit trail showing the creation date and time of the file.
+
+During the files existance any viewing or editing of the file is added to the audit list with date
+and time along with the user who viewed or editied it.
+
+If file is created an audit trail will be created showing:
+OWNER | [CREATED | MODIFIED | VIEWED] | DATE | TIME 
+
+Else file is created no audit trail appears - fail
+==================================================================================================
+System Admin:
+System admin are required to assign permission to users of the EDRM allowing for file uploads and manegment and are able to access the audit logs for the EDRM and all documents on the system.
+
+User reports to system admin that they are unable to find a file on the system.
+
+If system admin can locate the file within the audit logs they can restore to the main system - Success
+
+Else if the file is not found it can not be restored - fail
+==================================================================================================
+
+
