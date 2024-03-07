@@ -21,7 +21,7 @@ Else if user views the file without having permission and can access - fail
 
 
 ==================================================================================================
-Permision test Three:
+Permission test Three:
 
 User submits document to the EDRM and is designated as creator.
 
@@ -59,11 +59,11 @@ Due to circumstances the file is required by the original client.
 
 The file on the archive is over 2 years old and created by a former emplyoee.
 
-When user goes to search for the file they fillter for older than 2 years and by created by user.
+When user goes to search for the file they filter for older than 2 years and by created by user.
 
-IF the file is located on the system after the orginal creator leaves - success
+IF the file is located on the system after the original creator leaves - success
 
-IF the file cannot be located or accessed after orginal creator leaves - fail
+IF the file cannot be located or accessed after original creator leaves - fail
 
 ==================================================================================================
 Emails\Monthly Management:
