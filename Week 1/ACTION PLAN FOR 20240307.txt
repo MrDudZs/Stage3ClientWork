@@ -1,0 +1,19 @@
+ACTION PLAN FOR 20240307:
+
+Tom - I would like you to go over the acceptance tests with in the GitHub repo under Notes > Acceptance Tests. With that would you be able to make them in to a proper user story and if need be add any acceptance tests you may think of.
+
+David I would like you to start work on the ER diagram as you mentioned on Tudays you are confident with them. I would like them to then be exported as a PNG on to the GitHub Repo under "Notes". THIS NEEDS TO BE COMPLETED BY END OF SESSION.
+
+Nasir & Ben We [Matt] will be develiping the wireframe in full we will need at least 50% of it complete by END OF SESSION 100% complete by SATURDAY 9TH.
+
+BEN & TOM Once we have our tasks done we will then go through and tidy up the GitHub keeping it clean and presentable with dedicated areas for files.
+
+
+Notes:
+Once you all have completed a task assgined IF you are noy on site then write down what you did on DISCORD. Though IF you are on site tomorrow I would like it seen by the rest of us in session so that we can review it there and then.
+
+
+If there are any concerns with this let myself [MATT] know what you are concerned about and I will discuss with you.
+
+
+Tom the client has provided us an updated PowerPoint for the EDRM, this will help with the completion of expanded user stories and acceptance tests, as it contains information reguarding roles on the system along with what access rights each of these roles have. This may or will benifit you for todays task.
