@@ -14,3 +14,6 @@ Once you all have completed a task assgined IF you are noy on site then write do
 
 
 If there are any concerns with this let myself [MATT] know what you are concerned about and I will discuss with you.
+
+
+Tom the client has provided us an updated PowerPoint for the EDRM, this will help with the completion of expanded user stories and acceptance tests, as it contains information reguarding roles on the system along with what access rights each of these roles have. This may or will benifit you for todays task.
