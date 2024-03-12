@@ -2,10 +2,13 @@ ACTION PLAN 20230312:
 
 Nassir: Working on index.html making it as close to the clients homepage as possible.
 
-Tom: TBD
+Tom: Working on Use Case Diagram.
 
 Ben: Working on admin & html (Learning Tables in HTML & CSS).
 
 Matt: Working on clients requests from last meeting - Working wireframe to fit what is needed - Continuing on ERD.
 
  
+
+Notes:
+VSC on Uni devices will not allow for personal accounts to be used, this means we will not be able to use the GitHub repo on Uni devices.
