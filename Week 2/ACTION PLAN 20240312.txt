@@ -1,0 +1,11 @@
+ACTION PLAN 20230312:
+
+Nassir: Working on index.html making it as close to the clients homepage as possible.
+
+Tom: TBD
+
+Ben: Working on admin & html (Learning Tables in HTML & CSS).
+
+Matt: Working on clients requests from last meeting - Working wireframe to fit what is needed - Continuing on ERD.
+
+ 
