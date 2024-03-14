@@ -1,0 +1,35 @@
+ACTION PLAN 20240314
+
+Ben - tbd
+
+Matt - Database input & intergration (Creating Signin page and system test accounts). Code review w/ Nassir.
+
+Nassir - Code Review w/ Matt. tbd
+
+Tom - tbd
+
+
+
+Notes:
+
+Milestones & Objectives:
+
+Objectives:
+To agree on a development strategy with the client.
+To start high-fidelity prototype development (coding).
+ 
+Milestones:
+At the end of the week, you are expected to achieve the following:
+To receive early feedback on the prototype developed in Week 1.
+To produce an action plan based on client's feedback.
+To start high-fidelity prototype development (coding).
+
+LSEPI Objectives and Milestones:
+
+Objectives:
+To discuss what legislation/act specifically relates to your client
+To discuss how this legislation may influence the decisions you make for the client project
+
+Milestones:
+To have started to research some LSEPI examples that relate to your projects
+To have started to consider the impact these issues will have on your project
