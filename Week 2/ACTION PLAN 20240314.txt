@@ -1,12 +1,12 @@
 ACTION PLAN 20240314
 
-Ben - tbd
+Ben - working on tables for html and css.
 
 Matt - Database input & intergration (Creating Signin page and system test accounts). Code review w/ Nassir.
 
 Nassir - Code Review w/ Matt. tbd
 
-Tom - tbd
+Tom - Working on sample user page for HTML (Head of Finance Department)
 
 
 
@@ -33,3 +33,11 @@ To discuss how this legislation may influence the decisions you make for the cli
 Milestones:
 To have started to research some LSEPI examples that relate to your projects
 To have started to consider the impact these issues will have on your project
+
+
+Rizwanas' note:
+"
+Group has been advised to provide the client with the dahboard example they have provided.
+
+They have also been advised to document LSEPI based on clients PDPA (data protection act) by relating to prject.
+"
