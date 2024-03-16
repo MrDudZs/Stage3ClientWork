@@ -15,7 +15,7 @@ body {
     height: 100px;
     width: 300px;    
 }
-.topnav {
+.topnav-mn {
     width: 100%;
     position: fixed;
     top: 0;
@@ -23,18 +23,18 @@ body {
     background-color: rgb(18, 135, 80);
 }
 
-.topnav ul {
+.topnav-mn ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     display: flex; 
     justify-content: flex-start; 
 }
-.topnav li {
+.topnav-mn li {
     margin: 0;
 }
 
-.topnav a {
+.topnav-mn a {
     color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
@@ -42,7 +42,7 @@ body {
     font-family: serif;
 }
 
-.topnav a:hover {
+.topnav-mn a:hover {
     background-color: #ffffff;
     color: rgb(18, 135, 80);
 }
