@@ -103,3 +103,67 @@ tbody tr:nth-child(even) {
 }
 
 
+/* Document Management Page */
+
+.container-mn{
+    display: flex;
+}
+
+.logo-mn{
+    image-rendering: optimizeSpeed;
+    background-image: none;
+    object-fit: contain;
+}
+
+.docManagerHeader-mn{
+    background-color: blue;
+
+    margin: 0%;
+    padding: 25px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.docManagerMain-mn{
+    padding: 10px auto;
+    border: 50%;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+.pendingRecords-mn {
+    text-align: center;
+    background-color: #eef6ff;
+    padding: 20px;
+}
+
+.recordSummery-mn{
+    background-color: #eef6ff;
+}
+
+.recentRecords-mn{
+    background-color: #eef6ff;
+    padding: 20px;
+}
+
+.recentTask-mn{
+    background-color: #eef6ff;
+    padding: 20px;
+}
+
+.analysis{
+    background-color: #eef6ff;
+
+}
+
