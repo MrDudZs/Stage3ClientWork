@@ -1,9 +1,9 @@
  // Doughnut chart data
  var doughnutData = {
-    labels: ['Red', 'Blue', 'Yellow'],
+    labels: ['Approved', 'Pending', 'Rejected'],
     datasets: [{
         data: [30, 20, 50],
-        backgroundColor: ['red', 'blue', 'yellow']
+        backgroundColor: ['green', 'yellow', 'red']
     }]
 };
 
@@ -11,10 +11,15 @@
 var barData = {
     labels: ['Acc', 'Hr', 'Finan', 'Media'],
     datasets: [{
-        label: '',
+        label: 'Approved',
         data: [12, 19, 3, 5],
-        backgroundColor: 'rgba(255, 99, 132, 0.5)'
-    }]
+        backgroundColor: 'rgb(6, 2, 112)',
+
+        label: 'Pending',
+        data:[1, 15, 12, 13],
+        backgroundColor: 'rgb(255, 236, 161)'
+    }],
+
 };
 
 // Get the context of the canvas elements
