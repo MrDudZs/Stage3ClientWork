@@ -50,6 +50,8 @@ li:hover:not(.active) {
 
 /* Login-Out */
 
+
+
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -57,6 +59,7 @@ li:hover:not(.active) {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border: 40px;
   }
 
 .dropdown-container-mn {
@@ -95,11 +98,231 @@ li:hover:not(.active) {
 /* Header */
 .docManagerHeader-mn{
     background-color: #ffffff;
-    padding: 5px;
-    height: 25px;
+    padding: 0;
+    height: 44px;
 
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    align-items: center;
+    display: block;
 }
+
+/*Admin Page*/
+
+/*Top Row*/
+#top-management-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+/*Pending Records Table*/
+
+.pendingRec-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .pendingRec-td, .pendingRec-th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .pendingRec-tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+/*Bottom Row*/
+
+.analysis-mn .recentTask-mn .recentRecords-mn{
+    background-color: lightblue;
+    padding: 5%;
+}
+
+#bottom-management-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#report-sender-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*KFH CSS for Top Right content*/
+.topbar-dropdown.login-tp {
+    background: #f1f1f1;
+    color: #363636;
+}
+.login-tp.topbar-dropdown .title {
+    padding: 24px 20px 20px 20px;
+}
+.topbar-dropdown .title {
+    line-height: 44px;
+}
+
+.topbar-dropdown .title {
+    padding: 0;
+    cursor: pointer;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'latoregular';
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-tp {
+    background: #1ab05c;
+    float: right;
+}
+
+.topbar-dropdown {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 40px;
+    position: relative;
+}
+
+.topbar-dropdown.login-tp .fa.fa-caret-down {
+    color: #128754;
+}
+
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.fa, .fas, .far, .fal, .fab {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+
+.topbar-dropdown.login-tp .dropdown-list {
+    left: inherit;
+    right: 0;
+    width: 300px;
+    padding: 10px 20px;
+}
+
+.topbar-dropdown .dropdown-list {
+    position: absolute;
+    width: 180px;
+    right: 0px;
+    top: 100%;
+    border-radius: 0;
+    background-color: #f1f1f1;
+    padding: 0px 16px;
+    z-index: 1;
+    text-align: left;
+    opacity: 1;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transform-origin: 50% 0% 0px;
+    -moz-transform-origin: 50% 0% 0px;
+    -webkit-transform-origin: 50% 0% 0px;
+    -ms-transform-origin: 50% 0% 0px;
+    z-index: 1;
+    visibility: visible;
+}
+.collapse {
+    display: none;
+}
+
+
+.search-form {
+    float: left;
+    overflow: hidden;
+    width: 240px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+#search-btn {
+    cursor: pointer;
+    float: right;
+    height: 89px;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 999999 !important;
+}
+
