@@ -9,10 +9,10 @@
 
 // Bar chart data
 var barData = {
-    labels: ['A', 'B', 'C', 'D', 'E'],
+    labels: ['Acc', 'Hr', 'Finan', 'Media'],
     datasets: [{
-        label: 'Dataset 1',
-        data: [12, 19, 3, 5, 2],
+        label: '',
+        data: [12, 19, 3, 5],
         backgroundColor: 'rgba(255, 99, 132, 0.5)'
     }]
 };
