@@ -5,6 +5,13 @@ body {
     background-color: #f0f0f0;
 }
 
+.footer-container-mn{
+    background-color: #128754;
+    margin: 0 auto;
+    padding: 50px;
+
+    text-align: center;
+}
 
 
 /* Top Nav Bar */
@@ -195,8 +202,20 @@ li:hover:not(.active) {
     background-color: #dddddd;
   }
 
+/*Report Sender*/
+.report-sender-container{
+    background-color: #363636;
+    margin: 0 auto;
+    padding: 50px;
+}
+.report-sender{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
-
+    margin: 0 auto;
+    padding: 50px;
+}
 
 
 
