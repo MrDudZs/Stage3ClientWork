@@ -1,0 +1,11 @@
+Client Notes: 20240318
+
+
+Put in numbers of approve pending and reject in the barchar 
+
+For date Recent Record change it to accuracte date and not yesterday
+
+Make sure to set perameter for management
+reports on a timeline and keep as and when
+
+Think about how to store and manage the users using this system
