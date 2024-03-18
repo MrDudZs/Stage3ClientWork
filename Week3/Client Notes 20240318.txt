@@ -9,3 +9,12 @@ Make sure to set perameter for management
 reports on a timeline and keep as and when
 
 Think about how to store and manage the users using this system
+
+
+
+Notes:
+Pending record changes > add > Severity | Department of User | User Role
+Recend record changes > add > Owner | Role | Department of User
+Analysis changes > link analysis with the dougnut graph to show accurate number of pending, approved, rejeted.
+
+Recent Task changes > link to analysis for accurate depiction as listed above > Link to record summary. (all inputs for data are on the same .js file).
