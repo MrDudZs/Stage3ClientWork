@@ -24,7 +24,6 @@ ul {
 
 li {
     display: inline;
-    border-right: 1px solid black;
     float: left;
 }
 
@@ -56,8 +55,6 @@ li:hover:not(.active) {
 }
 
 /* Login-Out */
-
-
 
 .dropbtn {
     background-color: #4CAF50;
@@ -102,6 +99,19 @@ li:hover:not(.active) {
 }
 
 
+/*Left drop nav*/
+
+.dropdown-sidenav-ul{
+    margin: 0%;
+    padding: 0%;
+
+    overflow: hidden;
+}
+
+.dropdown-sidenav-li{
+    display: inline;
+    float: left;
+}
 /* Header */
 .docManagerHeader-mn{
     background-color: #ffffff;
