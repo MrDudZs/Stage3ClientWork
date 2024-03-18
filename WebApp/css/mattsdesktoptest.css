@@ -113,8 +113,17 @@ li:hover:not(.active) {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+
+    margin: 0 auto;
+    padding: 50px;
 }
 
+.recordSummary-mn{
+    background-color: lightblue;
+}
+.pendingRecords-mn{
+    background-color: lightblue;
+}
 /*Pending Records Table*/
 
 .pendingRec-table {
@@ -129,15 +138,20 @@ li:hover:not(.active) {
     padding: 8px;
   }
   
-  .pendingRec-tr:nth-child(even) {
+  .pendingRec-tr{
     background-color: #dddddd;
   }
 
 /*Bottom Row*/
 
-.analysis-mn .recentTask-mn .recentRecords-mn{
+.analysis-mn{
     background-color: lightblue;
-    padding: 5%;
+} 
+.recentTask-mn{
+    background-color: lightblue;
+} 
+.recentRecords-mn{
+    background-color: lightblue;
 }
 
 #bottom-management-row{
@@ -146,6 +160,8 @@ li:hover:not(.active) {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+
+    margin: 0 auto;
 }
 
 #report-sender-container{
@@ -157,6 +173,27 @@ li:hover:not(.active) {
 }
 
 
+#barChart{
+    background-color: #f0f0f0;
+}
+
+/*Recent Records Table*/
+
+.recentRec-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .recentRec-td, .recentRec-th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .recentRec-tr{
+    background-color: #dddddd;
+  }
 
 
 
