@@ -9,14 +9,18 @@
 
 // Bar chart data
 var barData = {
-    labels: ['Acc', 'Hr', 'Finan', 'Media'],
+    labels: ['Approved', 'Pending', 'Rejected'],
     datasets: [{
         label: 'Approved',
-        data: [12, 19, 3, 5],
+        data: [30, 20, 50],
         backgroundColor: 'rgb(6, 2, 112)',
 
         label: 'Pending',
-        data:[1, 15, 12, 13],
+        data: [30, 20, 50],
+        backgroundColor: 'rgb(255, 236, 161)',
+
+        label: 'Rejected',
+        data: [30, 20, 50],
         backgroundColor: 'rgb(255, 236, 161)'
     }],
 
