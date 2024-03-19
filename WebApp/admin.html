@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </script>
 
 </head>
 
@@ -26,16 +25,28 @@
         </div>
         <div class="docManagerHeader-mn docManagerHeader-mb">
             <header>
-                <div class="top-right-content">
-                    <!--Sign out/switch user test-->
-                    <div class="log-mn log-mb" style="float: right;">
-                        <div class="dropdown-container-mn">
-                            <button class="dropbtn-mn">Logged in:</button>
-                            <div class="dropdown-cont-mn">
-                                <input type="submit" value="logout">
+                <div class="top-right-container">
+                    <div class="top-right-content">
+                        <!--Search Bar-->
+                        <div class="searchbar-mn">
+                            <div class="searchbar-content-mn">
+                                <form action="action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--Sign out/switch user test-->
+                        <div class="log-mn log-mb" style="float: right;">
+                            <div class="dropdown-container-mn">
+                                <button class="dropbtn-mn">Logged in:</button>
+                                <div class="dropdown-cont-mn">
+                                    <input type="submit" value="logout">
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="top-left-content">
                     <!--Left Nav Bar-->
@@ -70,42 +81,63 @@
                                 <th class="pendingRec-th">Class</th>
                                 <th class="pendingRec-th">Due Date</th>
                                 <th class="pendingRec-th">Owner</th>
+                                <th class="pendingRec-th">Department</th>
+                                <th class="pendingRec-th">Role</th>
+                                <th class="pendingRec-th">Serverity</th>
                             </tr>
                             <tr class="pendingRec-tr">
                                 <td class="pendingRec-td">Example Contract</td>
                                 <td class="pendingRec-td">Proposal</td>
                                 <td class="pendingRec-td">20.09.2100</td>
                                 <td class="pendingRec-td">Matt Dudley</td>
+                                <td class="pendingRec-td">Finance</td>
+                                <td class="pendingRec-td">Head of Finance</td>
+                                <td class="pendingRec-td">HIGH</td>
                             </tr>
                             <tr class="pendingRec-tr">
                                 <td class="pendingRec-td">Example Contract</td>
                                 <td class="pendingRec-td">Proposal</td>
                                 <td class="pendingRec-td">20.09.2100</td>
                                 <td class="pendingRec-td">Matt Dudley</td>
+                                <td class="pendingRec-td">Finance</td>
+                                <td class="pendingRec-td">Head of Finance</td>
+                                <td class="pendingRec-td">HIGH</td>
                             </tr>
                             <tr class="pendingRec-tr">
                                 <td class="pendingRec-td">Example Contract</td>
                                 <td class="pendingRec-td">Proposal</td>
                                 <td class="pendingRec-td">20.09.2100</td>
                                 <td class="pendingRec-td">Matt Dudley</td>
+                                <td class="pendingRec-td">Finance</td>
+                                <td class="pendingRec-td">Head of Finance</td>
+                                <td class="pendingRec-td">HIGH</td>
                             </tr>
                             <tr class="pendingRec-tr">
                                 <td class="pendingRec-td">Example Contract</td>
                                 <td class="pendingRec-td">Proposal</td>
                                 <td class="pendingRec-td">20.09.2100</td>
                                 <td class="pendingRec-td">Matt Dudley</td>
+                                <td class="pendingRec-td">Finance</td>
+                                <td class="pendingRec-td">Head of Finance</td>
+                                <td class="pendingRec-td">HIGH</td>
                             </tr>
                             <tr class="pendingRec-tr">
                                 <td class="pendingRec-td">Example Contract</td>
                                 <td class="pendingRec-td">Proposal</td>
                                 <td class="pendingRec-td">20.09.2100</td>
                                 <td class="pendingRec-td">Matt Dudley</td>
+                                <td class="pendingRec-td">Finance</td>
+                                <td class="pendingRec-td">Head of Finance</td>
+                                <td class="pendingRec-td">HIGH</td>
                             </tr>
                             <tr class="pendingRec-tr">
                                 <td class="pendingRec-td">Example Contract</td>
                                 <td class="pendingRec-td">Proposal</td>
                                 <td class="pendingRec-td">20.09.2100</td>
                                 <td class="pendingRec-td">Matt Dudley</td>
+                                <td class="pendingRec-td">Finance</td>
+                                <td class="pendingRec-td">Head of Finance</td>
+                                <td class="pendingRec-td">HIGH</td>
                             </tr>
                         </table>
                     </div>
@@ -123,9 +155,10 @@
                         <table class="recentRec-table">
                             <tr class="recentRec-tr">
                                 <th class="recentRec-th"></th>
-                                <th class="recentRec-th">Name</th>
-                                <th class="recentRec-th">Size</th>
+                                <th class="recentRec-th">Name:</th>
+                                <th class="recentRec-th">Size:</th>
                                 <th class="recentRec-th">Created:</th>
+                                <th class="recentRec-th"> Owner:</th>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -134,7 +167,8 @@
                                 </td>
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
-                                <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">18.03.2024</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -143,7 +177,8 @@
                                 </td>
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
-                                <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">18.03.2024</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -152,7 +187,8 @@
                                 </td>
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
-                                <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">18.03.2024</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -161,7 +197,8 @@
                                 </td>
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
-                                <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">18.03.2024</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -170,7 +207,8 @@
                                 </td>
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
-                                <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">18.03.2024</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                         </table>
                     </div>
@@ -181,9 +219,20 @@
                         <table class="recentRec-table">
                             <tr class="recentRec-tr">
                                 <th class="recentRec-th"></th>
-                                <th class="recentRec-th">Name</th>
-                                <th class="recentRec-th">Size</th>
+                                <th class="recentRec-th">Name:</th>
+                                <th class="recentRec-th">Size:</th>
                                 <th class="recentRec-th">Created:</th>
+                                <th class="recentRec-th">Owner:</th>
+                            </tr>
+                            <tr class="recentRec-tr">
+                                <td class="recentRec-td">
+                                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=document-text" width="32"
+                                        height="32">
+                                </td>
+                                <td class="recentRec-td">Proposal</td>
+                                <td class="recentRec-td">8.1MB</td>
+                                <td class="recentRec-td">18.03.2024</td> <!--Set up so that dates increase by day-->
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -193,6 +242,7 @@
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
                                 <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -202,6 +252,7 @@
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
                                 <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -211,6 +262,7 @@
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
                                 <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
@@ -220,15 +272,7 @@
                                 <td class="recentRec-td">Proposal</td>
                                 <td class="recentRec-td">8.1MB</td>
                                 <td class="recentRec-td">Yesterday</td>
-                            </tr>
-                            <tr class="recentRec-tr">
-                                <td class="recentRec-td">
-                                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=document-text" width="32"
-                                        height="32">
-                                </td>
-                                <td class="recentRec-td">Proposal</td>
-                                <td class="recentRec-td">8.1MB</td>
-                                <td class="recentRec-td">Yesterday</td>
+                                <td class="recentRec-td">Matt Dudley</td>
                             </tr>
                         </table>
                     </div>
