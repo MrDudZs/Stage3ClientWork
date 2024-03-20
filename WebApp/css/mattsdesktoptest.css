@@ -5,7 +5,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.footer-container-mn{
+.footer-container-mn {
     background-color: #128754;
     margin: 0 auto;
     padding: 50px;
@@ -54,6 +54,26 @@ li:hover:not(.active) {
     color: rgb(18, 135, 80);
 }
 
+/*HEADER*/
+
+.docManagerHeader-mn {
+    background-color: #ffffff;
+    padding: 0;
+    height: 44px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* Content Right */
+
+.top-right-content {
+    background-color: pink;
+}
+
 /* Login-Out */
 
 .dropbtn {
@@ -64,7 +84,7 @@ li:hover:not(.active) {
     border: none;
     cursor: pointer;
     border: 40px;
-  }
+}
 
 .dropdown-container-mn {
     position: relative;
@@ -88,43 +108,61 @@ li:hover:not(.active) {
 }
 
 
-.dropdown-cont-mn a:hover {background-color: #f1f1f1}
+.dropdown-cont-mn a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdown-container-mn:hover .dropdown-cont-mn {
-  display: block;
+    display: block;
 }
 
 .dropdown-container-mn:hover .dropbtn {
-  background-color: #3e8e41;
+    background-color: #3e8e41;
+}
+
+
+
+/*search bar*/
+.searchbar-content-mn {
+    float: right;
+    display: flex;
+}
+
+.searchbar-content-mn button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.searchbar-content-mn button:hover {
+    background: #ccc;
 }
 
 
 /*Left drop nav*/
 
-.dropdown-sidenav-ul{
+.dropdown-sidenav-ul {
     margin: 0%;
     padding: 0%;
 
     overflow: hidden;
 }
 
-.dropdown-sidenav-li{
+.dropdown-sidenav-li {
     display: inline;
     float: left;
 }
-/* Header */
-.docManagerHeader-mn{
-    background-color: #ffffff;
-    padding: 0;
-    height: 44px;
 
-    display: block;
-}
 
 /*Admin Page*/
 
 /*Top Row*/
-#top-management-row{
+#top-management-row {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -135,43 +173,48 @@ li:hover:not(.active) {
     padding: 50px;
 }
 
-.recordSummary-mn{
+.recordSummary-mn {
     background-color: lightblue;
 }
-.pendingRecords-mn{
+
+.pendingRecords-mn {
     background-color: lightblue;
 }
+
 /*Pending Records Table*/
 
 .pendingRec-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  .pendingRec-td, .pendingRec-th {
+}
+
+.pendingRec-td,
+.pendingRec-th {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
-  }
-  
-  .pendingRec-tr{
+}
+
+.pendingRec-tr {
     background-color: #dddddd;
-  }
+}
 
 /*Bottom Row*/
 
-.analysis-mn{
-    background-color: lightblue;
-} 
-.recentTask-mn{
-    background-color: lightblue;
-} 
-.recentRecords-mn{
+.analysis-mn {
     background-color: lightblue;
 }
 
-#bottom-management-row{
+.recentTask-mn {
+    background-color: lightblue;
+}
+
+.recentRecords-mn {
+    background-color: lightblue;
+}
+
+#bottom-management-row {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -181,7 +224,7 @@ li:hover:not(.active) {
     margin: 0 auto;
 }
 
-#report-sender-container{
+#report-sender-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,7 +233,7 @@ li:hover:not(.active) {
 }
 
 
-#barChart{
+#barChart {
     background-color: #f0f0f0;
 }
 
@@ -200,25 +243,27 @@ li:hover:not(.active) {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  .recentRec-td, .recentRec-th {
+}
+
+.recentRec-td,
+.recentRec-th {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 8px;
-  }
-  
-  .recentRec-tr{
+}
+
+.recentRec-tr {
     background-color: #dddddd;
-  }
+}
 
 /*Report Sender*/
-.report-sender-container{
+.report-sender-container {
     background-color: #363636;
     margin: 0 auto;
     padding: 50px;
 }
-.report-sender{
+
+.report-sender {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -286,9 +331,11 @@ li:hover:not(.active) {
     background: #f1f1f1;
     color: #363636;
 }
+
 .login-tp.topbar-dropdown .title {
     padding: 24px 20px 20px 20px;
 }
+
 .topbar-dropdown .title {
     line-height: 44px;
 }
@@ -321,12 +368,17 @@ li:hover:not(.active) {
     color: #128754;
 }
 
-.fa, .fas {
+.fa,
+.fas {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
 }
 
-.fa, .fas, .far, .fal, .fab {
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     display: inline-block;
@@ -367,6 +419,7 @@ li:hover:not(.active) {
     z-index: 1;
     visibility: visible;
 }
+
 .collapse {
     display: none;
 }
@@ -391,4 +444,3 @@ form {
     position: relative;
     z-index: 999999 !important;
 }
-
