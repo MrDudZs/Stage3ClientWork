@@ -167,3 +167,27 @@ tbody tr:nth-child(even) {
 
 }
 
+/* Archives Page */
+
+.archivescontainer{
+    margin-top: 75px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+thead {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
