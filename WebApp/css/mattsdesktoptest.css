@@ -15,9 +15,10 @@ body {
 
 
 /* Top Nav Bar */
+
 ul {
-    margin: 0%;
-    padding: 0%;
+    margin: 0 auto;
+    height: 50px;
 
     overflow: hidden;
 }
@@ -56,23 +57,58 @@ li:hover:not(.active) {
 
 /*HEADER*/
 
-.docManagerHeader-mn {
-    background-color: #ffffff;
-    padding: 0;
-    height: 44px;
+.header-mn{
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: stretch;
     justify-content: center;
 }
 
+.header {
+    
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding-top: 0px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: #f0f0f0;
+
+}
+
+.header-center{
+    width: 10px;
+}
+.header-left,
+.header-right {
+    padding: 5px;
+}
+
+
+
+.header-mn {
+    background-color: #ffffff;
+    padding: 0;
+    height: 44px;
+}
+
+
+
 /* Content Right */
 
-.top-right-content {
-    background-color: pink;
+.searchbar-mn {
+    float: right;
+
 }
+
+.log-mn {
+    float: right;
+}
+
+
+
 
 /* Login-Out */
 
@@ -273,12 +309,54 @@ li:hover:not(.active) {
 }
 
 
+/* home.php */
+
+
+.header-content {
+    height: 44px;
+    padding: 10px;
+    background-color: #128754;
+    color: white;
+}
 
 
 
+/* LOGIN PAGE */
+
+.loginContent {
+    margin: 0px auto;
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.registerContent {
+    text-align: center;
+}
 
 
+.input {
+    border-radius: 5px;
+    border: solid thin #aaa;
+    padding: 10px;
+    margin: 4px;
+    display: flex;
+}
 
+.button {
+    border-radius: 5px;
+    border: solid thin #aaa;
+    padding: 10px;
+    margin: 4px;
+
+    cursor: pointer;
+}
 
 
 
