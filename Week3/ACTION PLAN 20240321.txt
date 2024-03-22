@@ -1,0 +1,25 @@
+ACTION PLAN: 20240321
+
+Ben - working on portfolio and staff admin page
+
+Matt - working on user accounts and login (creating logins for users with special permissions) - working on making the admin less static more dynamic
+
+Nasir - Working on docs page - archives
+
+Tom - working on LESIP
+
+Notes:
+
+Needs work on: 
+Admin:
+LESIP, Portfolio
+
+Coding:
+- Audit page
+- Login page
+- File upload
+- File Admin > Down load report
+
+
+Feedback:
+Client wanted to see more of a quantity for the admin dashboard
