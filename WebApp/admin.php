@@ -23,50 +23,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="docManagerHeader-mn docManagerHeader-mb">
-            <header>
-                <div class="top-right-container">
-                    <div class="top-right-content">
-                        <!--Search Bar-->
-                        <div class="searchbar-mn">
-                            <div class="searchbar-content-mn">
-                                <form action="action_page.php">
-                                    <input type="text" placeholder="Search.." name="search">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <!--Sign out/switch user test-->
-                        <div class="log-mn log-mb" style="float: right;">
-                            <div class="dropdown-container-mn">
-                                <button class="dropbtn-mn">Logged in:</button>
-                                <div class="dropdown-cont-mn">
-                                    <input type="submit" value="logout">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="top-left-content">
-                    <!--Left Nav Bar-->
-                    <div class="sidenav-mn sidenav-mb" style="float:left;">
-                        <div class="dropdown-container-mn">
-                            <button class="dropbtn-mn">
-                                <img src="https://s2.svgbox.net/hero-outline.svg?color=green&ic=menu" width="32"
-                                    height="32">
-                            </button>
-                            <div class="dropdown-cont-mn" style="left:0;">
-                                <ul class="dropdown-sidenav-ul">
-                                    <li class="dropdown-sidenav-li"><a href="index.php">File Upload</a></li>
-                                    <li class="dropdown-sidenav-li"><a href="admin.html">Admin</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </header>
+        <div class="header-mn header-mb">
+            <?php 
+                include "includes/header.php";
+            ?>
         </div>
 
 
@@ -226,7 +187,7 @@
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
-                                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=document-text" width="32"
+                                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=check-circle" width="32"
                                         height="32">
                                 </td>
                                 <td class="recentRec-td">Proposal</td>
@@ -236,7 +197,7 @@
                             </tr>
                             <tr class="recentRec-tr">
                                 <td class="recentRec-td">
-                                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=document-text" width="32"
+                                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=check-circle" width="32"
                                         height="32">
                                 </td>
                                 <td class="recentRec-td">Proposal</td>
@@ -292,7 +253,9 @@
         </div>
 
         <div class="footer-container-mn">
-            <h3>Placement Text for Footer</h3>
+        <?php
+                include "includes/footer.php";
+            ?>
         </div>
     </div>
     <script src="js/charts.js"></script>
