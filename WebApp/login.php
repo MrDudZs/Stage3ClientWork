@@ -35,10 +35,10 @@
             <div class="loginContent">
                 <h2>Login</h2>
                 <div class="loginForm">
-                    <form method="post">
+                    <form action="loginprocess.php" method="post">
                         <input class="input" type="email" name="email" placeholder="email" required>
                         <br>
-                        <input class="input" type="text" name="staff-id" placeholder="staff id" required>
+                        <input class="input" type="text" name="staffid" placeholder="staff id" required>
                         <br>
                         <input class="input" type="password" name="password" placeholder="password" required> <br>
                         <br>
