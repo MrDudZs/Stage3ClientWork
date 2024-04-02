@@ -15,39 +15,31 @@ body {
 
 
 /* Top Nav Bar */
-
-ul {
-    margin: 0 auto;
-    height: 50px;
-
-    overflow: hidden;
-}
-
-li {
-    display: inline;
-    float: left;
-}
-
 .topnav-mn {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: rgb(18, 135, 80);
 }
 
-
-li:last-child {
-    border-right: none;
+.topnav-mn ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex; 
+    justify-content: flex-start; 
+}
+.topnav-mn li {
+    margin: 0;
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-
+.topnav-mn a {
+    color: #f2f2f2;
     padding: 14px 16px;
-    text-decoration: underline white;
-}
-
-li:hover:not(.active) {
-    background-color: white;
+    text-decoration: none;
+    font-size: 20px; 
+    font-family: serif;
 }
 
 .topnav-mn a:hover {
