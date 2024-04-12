@@ -16,14 +16,9 @@
 <body>
     <div class="container-mn container-mb">
         <div class="navbar-mn navbar-mb">
-            <nav class="topnav-mn">
-                <ul>
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a href="document.html">DOCUMENTS</a></li>
-                    <li><a href="archives.html">ARCHIVES</a></li>
-                    <li><a href="admin.html">ADMIN</a></li>
-                </ul>
-            </nav>
+            <?php 
+                include 'includes/nav.php';
+            ?>
         </div>
         <div class="header-mn header-mb">
             <?php
@@ -36,17 +31,11 @@
                 <h2>Login</h2>
                 <div class="loginForm">
                     <form action="loginprocess.php" method="post">
-                        <input class="input" type="email" name="email" placeholder="email" required>
-                        <br>
                         <input class="input" type="text" name="staffid" placeholder="staff id" required>
                         <br>
                         <input class="input" type="password" name="password" placeholder="password" required> <br>
                         <br>
                         <input class="button" type="submit" value="Login">
-                    </form>
-                    <form class="registerContent" action="register.php" method="get">
-                        <h3>Not already a user?</h3>
-                        <input class="button" type="submit" value="Register">
                     </form>
                 </div>
             </div>

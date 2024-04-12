@@ -1,44 +1,55 @@
 <?php
-use LDAP\Result;
 session_start();
 
 // Connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "edrm_stage3";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+include 'php/config.php';
 
 //Check connection
 
-if ($conn->connect_error)
-{
-    die("connection failed: " . $conn->connect_error);
+if ($conn->connect_error) {
+    die ("connection failed: " . $conn->connect_error);
 }
 
-// retreive form data
-$email = $_POST['email'];
+// get form data
 $staffid = $_POST['staffid'];
-$password = $_POST['password'];
+$provided_password = $_POST['password'];
 
-// SQL Query checking staff login
-$sql = "SELECT id FROM staff WHERE email='$email' AND staffid='$staffid' AND password='$password'";
+// SQL Query checking user login
+$sql = "SELECT staffid, first_name, surname, password, is_suspended, permission_id FROM staff WHERE staffid='$staffid'";
 $result = $conn->query($sql);
 
-if ($result->num_rows == 1){
-    //Login successful
-    echo "Login Successful!";
-    header("Location: dashboard.php");
-    exit;
+if ($result->num_rows == 1) {
+    // User found, fetch hashed password
+    $row = $result->fetch_assoc();
+    $hashed_password_from_db = $row['password'];
+    $is_suspended = $row['is_suspended'];
 
+    // Verify password
+    if (password_verify($provided_password, $hashed_password_from_db)) {
+        if ($is_suspended == 1) {
+            // Account is suspended, redirect back to login page with error message
+            $_SESSION['login_error'] = "Your account is suspended. Please contact support.";
+            header("Location: login.php");
+            exit;
+        } else {
+            // Set session variables with user data
+            $_SESSION['staffid'] = $row['staffid'];
+            $_SESSION['username'] = $row['first_name'] . ' ' . $row['surname']; // Concatenate first name and surname to form username
+            $_SESSION['permission_id'] = $row['permission_id'];
+
+            // Login successful
+            header("Location: dashboard.php");
+            exit;
+        }
+    } else {
+        // Invalid password
+        $_SESSION['login_error'] = "Invalid email or user ID";
+        header("Location: login.php");
+        exit;
+    }
 } else {
-    // Login failed
-    echo "Invalid email, staffID, or password";
+    // User not found
+    $_SESSION['login_error'] = "Invalid email or user ID";
     header("Location: login.php");
     exit;
 }
-
-$conn->close();
-
-?>
