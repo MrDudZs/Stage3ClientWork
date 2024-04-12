@@ -7,9 +7,6 @@
     <title>REGISTER</title>
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
-    
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 
 
@@ -35,21 +32,38 @@
             <div class="loginContent">
                 <h2>Register</h2>
                 <div class="loginForm">
-                    <form method="post">
+                    <form action="registerprocess.php" method="post">
 
-                        <input class="input" type="text" name="first_name"placeholder="first name"required>
+                        <input class="input" type="email" name="email" placeholder="Email" required>
                         <br>
-                        <input class="input" type="text" name="surname"placeholder="surname"required>
+                        <input class="input" type="text" name="first_name" placeholder="First name" required>
                         <br>
-                        <input class="input" type="email" name="email" placeholder="email" required>
+                        <input class="input" type="text" name="surname" placeholder="Surname" required>
                         <br>
-                        <input class="input" type="password" name="password" placeholder="password" required> <br>
+                        <input class="input" type="date" name="dob" required>
+                        <br>
+                        <input class="input" type="password" name="password" placeholder="Password" required>
+                        <br>
+                        <select class="input" name="permission_id" required>
+                            <option value="">Select Permission</option>
+                            <?php
+                            include "php/config.php";
+
+                            // Fetch permissions from the database
+                            $sql = "SELECT permission_id, permission_name FROM permissions";
+                            $result = $conn->query($sql);
+
+                            // Loop through each row of permissions and create options for dropdown
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                                    echo "<option value='" . $row['permission_id'] . "'>" . $row['permission_name'] . "</option>";
+                                }
+                            }
+                            ?>
+                        </select>
+                        <br>
                         <br>
                         <input class="button" type="submit" value="Register">
-                    </form>
-                    <form class="registerContent" action="login.php" method="get">
-                        <h3>Already a user?</h3>
-                        <input class="button" type="submit" value="Login">
                     </form>
                 </div>
             </div>
@@ -57,7 +71,7 @@
 
         <div class="footer-container-mn">
             <?php
-                include "includes/footer.php";
+            //include "includes/footer.php";
             ?>
         </div>
     </div>
