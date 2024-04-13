@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
+    <title>EDRM</title>
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
+    <?php
+    session_start()
+        ?>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 
 <body>
     <div class="container-mn container-mb">
-        <div class="navbar-mn navbar-mb">
-            <nav class="topnav-mn">
-                <ul>
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a href="document.html">DOCUMENTS</a></li>
-                    <li><a href="archives.html">ARCHIVES</a></li>
-                    <li><a href="admin.html">ADMIN</a></li>
-                </ul>
-            </nav>
+        <div class="navbar-cont-mn">
+            <?php
+            include "includes/nav.php";
+            ?>
         </div>
 
         <div class="header-mn header-mb">
-            <?php 
-                include "includes/header.php";
+            <?php
+            include "includes/header.php";
             ?>
         </div>
 
@@ -38,7 +36,7 @@
                     <div class="pendingRec-table-container">
                         <table class="pendingRec-table">
                             <tr class="pendingRec-tr">
-                                <th class="pendingRec-th">Name</th>
+                                <th class="pendingRec-th name-header">Name</th>
                                 <th class="pendingRec-th">Class</th>
                                 <th class="pendingRec-th">Due Date</th>
                                 <th class="pendingRec-th">Owner</th>
@@ -46,60 +44,39 @@
                                 <th class="pendingRec-th">Role</th>
                                 <th class="pendingRec-th">Serverity</th>
                             </tr>
-                            <tr class="pendingRec-tr">
-                                <td class="pendingRec-td">Example Contract</td>
-                                <td class="pendingRec-td">Proposal</td>
-                                <td class="pendingRec-td">20.09.2100</td>
-                                <td class="pendingRec-td">Matt Dudley</td>
-                                <td class="pendingRec-td">Finance</td>
-                                <td class="pendingRec-td">Head of Finance</td>
-                                <td class="pendingRec-td">HIGH</td>
-                            </tr>
-                            <tr class="pendingRec-tr">
-                                <td class="pendingRec-td">Example Contract</td>
-                                <td class="pendingRec-td">Proposal</td>
-                                <td class="pendingRec-td">20.09.2100</td>
-                                <td class="pendingRec-td">Matt Dudley</td>
-                                <td class="pendingRec-td">Finance</td>
-                                <td class="pendingRec-td">Head of Finance</td>
-                                <td class="pendingRec-td">HIGH</td>
-                            </tr>
-                            <tr class="pendingRec-tr">
-                                <td class="pendingRec-td">Example Contract</td>
-                                <td class="pendingRec-td">Proposal</td>
-                                <td class="pendingRec-td">20.09.2100</td>
-                                <td class="pendingRec-td">Matt Dudley</td>
-                                <td class="pendingRec-td">Finance</td>
-                                <td class="pendingRec-td">Head of Finance</td>
-                                <td class="pendingRec-td">HIGH</td>
-                            </tr>
-                            <tr class="pendingRec-tr">
-                                <td class="pendingRec-td">Example Contract</td>
-                                <td class="pendingRec-td">Proposal</td>
-                                <td class="pendingRec-td">20.09.2100</td>
-                                <td class="pendingRec-td">Matt Dudley</td>
-                                <td class="pendingRec-td">Finance</td>
-                                <td class="pendingRec-td">Head of Finance</td>
-                                <td class="pendingRec-td">HIGH</td>
-                            </tr>
-                            <tr class="pendingRec-tr">
-                                <td class="pendingRec-td">Example Contract</td>
-                                <td class="pendingRec-td">Proposal</td>
-                                <td class="pendingRec-td">20.09.2100</td>
-                                <td class="pendingRec-td">Matt Dudley</td>
-                                <td class="pendingRec-td">Finance</td>
-                                <td class="pendingRec-td">Head of Finance</td>
-                                <td class="pendingRec-td">HIGH</td>
-                            </tr>
-                            <tr class="pendingRec-tr">
-                                <td class="pendingRec-td">Example Contract</td>
-                                <td class="pendingRec-td">Proposal</td>
-                                <td class="pendingRec-td">20.09.2100</td>
-                                <td class="pendingRec-td">Matt Dudley</td>
-                                <td class="pendingRec-td">Finance</td>
-                                <td class="pendingRec-td">Head of Finance</td>
-                                <td class="pendingRec-td">HIGH</td>
-                            </tr>
+                            <?php
+                            // Connection
+                            include 'php/config.php';
+
+                            // Check connection
+                            if ($conn->connect_error) {
+                                die("connection failed: " . $conn->connect_error);
+                            }
+
+                            // SQL query to select documents with file_status = 0
+                            $sql = "SELECT doc_name, doc_class, doc_due, doc_owner, doc_severity FROM uploaded_docs WHERE file_status = 0";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                                // Output data of each row
+                                while ($row = $result->fetch_assoc()) {
+                                    echo "<tr class='pendingRec-tr'>";
+                                    echo "<td class='pendingRec-td scroll-text'>" . $row["doc_name"] . "</td>"; // Display doc_name with scrolling effect
+                                    echo "<td class='pendingRec-td'>" . $row["doc_class"] . "</td>"; // Display doc_class
+                                    echo "<td class='pendingRec-td'>" . $row["doc_due"] . "</td>"; // Display doc_due
+                                    echo "<td class='pendingRec-td'>" . $row["doc_owner"] . "</td>"; // Display doc_owner
+                                    echo "<td class='pendingRec-td'></td>"; // Leave department blank
+                                    echo "<td class='pendingRec-td'></td>"; // Leave role blank
+                                    echo "<td class='pendingRec-td'>" . $row["doc_severity"] . "</td>"; // Display doc_severity
+                                    echo "</tr>";
+                                }
+                            } else {
+                                echo "<tr><td colspan='7'>No pending documents found.</td></tr>";
+                            }
+
+                            // Close connection
+                            $conn->close();
+                            ?>
                         </table>
                     </div>
 
@@ -253,8 +230,8 @@
         </div>
 
         <div class="footer-container-mn">
-        <?php
-                include "includes/footer.php";
+            <?php
+            include "includes/footer.php";
             ?>
         </div>
     </div>
