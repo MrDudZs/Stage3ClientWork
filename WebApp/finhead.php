@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDRM</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
-
+    <?php
+    session_start()
+        ?>
 </head>
 
 <body>
@@ -24,11 +26,27 @@
         </div>
         <div class="finhead-main-mn">
             <div class="content-top">
+                <h3> My Documents: </h3>
                 <table>
                     <tr>
                         <th>Document Name</th>
                         <th>Severity</th>
                         <th>Upload Date</th>
+                        <th>DELETE</th>
+                        <th>ACCESS</th>
+                    </tr>
+                    <?php include 'includes/get-files.php'; ?>
+                </table>
+            </div>
+            <div class="content-bottom">
+                <h3> Shared Documents </h3>
+                <table>
+                    <tr>
+                        <th>Document Name</th>
+                        <th>Severity</th>
+                        <th>Upload Date</th>
+                        <th>DELETE</th>
+                        <th>ACCESS</th>
                     </tr>
                     <?php include 'includes/get-files.php'; ?>
                 </table>
