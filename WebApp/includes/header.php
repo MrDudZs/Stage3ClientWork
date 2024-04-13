@@ -6,7 +6,6 @@
                 <div class="dropdown-container-mn">
                     <button class="dropbtn-mn">
                         <?php
-                        session_start();
                         // Check if the user is logged in
                         if (isset($_SESSION['username'])) {
                             echo "Logged in:" . $_SESSION['username'];
