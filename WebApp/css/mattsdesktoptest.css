@@ -239,6 +239,15 @@ footer {
 
 /*Pending Records Table*/
 
+.pendingRec-td.scroll-text {
+    max-width: 200px; /* Set maximum width for the cell */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow:clip;
+}
+
+
+
 .pendingRec-table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -386,7 +395,8 @@ table {
     width: 100%;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -401,7 +411,21 @@ th {
     color: white;
 }
 
+/* user-files */
+/* Style for the action links */
+.action-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
 
+
+/* Style for the table */
 
 
 
