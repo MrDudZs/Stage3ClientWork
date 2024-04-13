@@ -1,57 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/mobile.css" />
-    <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
+// Check if the user is logged in
+if (!isset($_SESSION['staffid'])) {
+    // Redirect to the login page if not logged in
+    header("Location: login.php");
+    exit();
+}
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+// Read the logged-in user's permission ID
+$permissionId = $_SESSION['permission_id'];
 
-</head>
+// Determine the appropriate dashboard based on permission ID
+switch ($permissionId) {
+    case 1:
+        // Redirect to the dashboard for users with permission ID 1 (SysAdmin)
+        header("Location: sysadmin.php");
+        break;
+    case 2:
+        // Redirect to the dashboard for users with permission ID 2 (FinHead)
+        header("Location: finhead.php");
+        break;
+    case 3:
+        // Redirect to the dashboard for users with permission ID 3 (Index)
+        header("Location: finmang.php");
+        break;
+    case 4:
+        // Redirect to the dashboard for users with permission ID 4 (Admin)
+        header("Location: admin.php");
+        break;
+    case 5:
+        // Redirect to the dashboard for users with permission ID 5 (Register)
+        header("Location: register.php");
+        break;
+    case 6:
+        // Redirect to the dashboard for users with permission ID 6 (Login)
+        header("Location: login.php");
+        break;
+    default:
+        // Redirect to a default page or show an error message
+        header("Location: default_dashboard.php");
+        break;
+}
 
-
-<body>
-    <div class="container-mn container-mb">
-        <div class="navbar-mn navbar-mb">
-            <nav class="topnav-mn">
-                <ul>
-                    <li><a href="index.php">HOME</a></li>
-                    <li><a href="document.html">DOCUMENTS</a></li>
-                    <li><a href="archives.html">ARCHIVES</a></li>
-                    <li><a href="admin.html">ADMIN</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header-mn header-mb">
-            <?php
-            include "includes/header.php";
-            ?>
-        </div>
-        <div class="dashboard-main-mn">
-            <div class="dashbaord-content-mn">
-                <div class="dashtop-mn">
-                    <h3>
-                        Documents
-                    </h3>
-                </div>
-                <div class="dashbottom-mn">
-                    <h3>
-                        Requests for Access
-                    </h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-container-mn">
-            <?php
-            include "includes/footer.php";
-            ?>
-        </div>
-    </div>
-
-</body>
-
-</html>
