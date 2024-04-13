@@ -4,107 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDRM</title>
+    <title>Documents</title>
     <link rel="stylesheet" href="css/mobile.css" />
-    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width : 720px)" />
+    <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
+    <?php
+        session_start()
+    ?>
 </head>
 
 <body>
-    <div class="container-mn container-mb">
-        <div class="navbar-mn navbar-mb">
+    <div class="container-mn">
+        <div class="navbar-cont-mn">
             <?php
-            include 'includes/nav.php';
+            include "includes/nav.php";
             ?>
         </div>
-        <div class="header-mn header-mb">
+        <div class="header-cont-mn">
             <?php
             include "includes/header.php";
             ?>
         </div>
-        <div class="file-searchbar">
-            <input type="text" class="search-bar" placeholder="Search for file">
-        </div>
-
-        <div class="container">
-            <table>
-                <thead>
+        <div class="finhead-main-mn">
+            <div class="content-top">
+                <h3> Documents on system: </h3>
+                <table>
                     <tr>
-                        <th>File</th>
+                        <th>Document Name</th>
+                        <th>Severity</th>
                         <th>Owner</th>
-                        <th>Date Created</th>
-                        <th>Audit Trail Modified</th>
-                        <th>Department</th>
+                        <th>Upload Date</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-                    <tr>
-                        <td>#12121212</td>
-                        <td>Bob</td>
-                        <td>2024-03-12 10:30 AM</td>
-                        <td>BOB</td>
-                        <td>BOB</td>
-                    </tr>
-
-                </tbody>
-            </table>
+                    <?php include 'includes/get-filesall.php'; ?>
+                </table>
+            </div>
         </div>
-
+    </div>
 </body>
 
+<script src="js/deletefiles.js"></script>
 </html>
