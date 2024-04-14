@@ -1,23 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-
-    
-
     height: 1080px;
-
     background-color: #f0f0f0;
 }
 
 footer {
     background-color: #128754;
     left: 0;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     text-align: center;
-    color: black;
+    position: absolute;
 }
+ footer h3{
+    color: white;
+ }
+  
 
+  
 
 /* Top Nav Bar */
 .topnav-mn {
