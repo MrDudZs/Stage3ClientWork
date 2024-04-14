@@ -1,3 +1,3 @@
 <footer>
-    <h1>Footer</h1>
+        <h3>COPYRIGHT © 2024 KUWAIT FINANCE HOUSE. ALL RIGHTS RESERVED</h3>
 </footer>

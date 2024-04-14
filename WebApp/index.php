@@ -23,9 +23,12 @@
         </div>
     </div>
     
+  
+
+
 </body>
-<footer>
-        <h3>COPYRIGHT © 2024 KUWAIT FINANCE HOUSE. ALL RIGHTS RESERVED</h3>
-</footer>
+            <?php
+            include "includes/footer.php";
+            ?>
 
 </html>
