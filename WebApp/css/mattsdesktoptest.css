@@ -91,7 +91,6 @@ footer {
 
 
 
-/* Content Right */
 .searchbar-mn {
     display: flex;
     align-items: center;
@@ -128,7 +127,6 @@ footer {
 .log-mn {
     float: right;
 }
-
 
 
 
@@ -595,14 +593,14 @@ form {
   margin: 0 auto;
 }
 
-form {
+.docup-form {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input[type="file"], select, input[type="text"], input[type="date"], input[type="submit"] {
+input[type="file"], select, input[type="text"], input[type="date"], .docup-submit[type="submit"] {
   display: block;
   width: 100%;
   padding: 10px;
@@ -617,7 +615,7 @@ input[type="file"] {
   cursor: pointer;
 }
 
-input[type="submit"] {
+.docup-submit[type="submit"] {
   background-color: #007bff;
   color: white;
   border: none;
@@ -626,6 +624,6 @@ input[type="submit"] {
   transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+.docup-submit[type="submit"]:hover {
   background-color: #0056b3;
 }
