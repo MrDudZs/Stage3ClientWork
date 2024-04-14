@@ -16,8 +16,6 @@ footer {
 }
 
 
-
-
 /* Top Nav Bar */
 .topnav-mn {
     width: 100%;
@@ -588,4 +586,46 @@ form {
     padding: 30px 20px;
     position: relative;
     z-index: 999999 !important;
+}
+
+/* DOC UPLOAD SECTION */
+
+.indexTestUpload {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"], select, input[type="text"], input[type="date"], input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }

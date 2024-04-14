@@ -26,7 +26,9 @@
             ?>
         </div>
 
+
         <div class="indexTestUpload">
+            
         <form action="upload.php" method="post" enctype="multipart/form-data">
                 <input type="file" name="file" required>
                 <select name="doc_severity" required>
