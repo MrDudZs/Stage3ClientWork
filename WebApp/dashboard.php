@@ -27,19 +27,19 @@ switch ($permissionId) {
         break;
     case 4:
         // Redirect to the dashboard for users with permission ID 4 (Admin)
-        header("Location: admin.php");
+        header("Location: finofi.php");
         break;
     case 5:
         // Redirect to the dashboard for users with permission ID 5 (Register)
-        header("Location: register.php");
+        header("Location: other-user.php");
         break;
     case 6:
         // Redirect to the dashboard for users with permission ID 6 (Login)
-        header("Location: login.php");
+        header("Location: other-user.php");
         break;
     default:
         // Redirect to a default page or show an error message
-        header("Location: default_dashboard.php");
+        header("Location: index.php");
         break;
 }
 

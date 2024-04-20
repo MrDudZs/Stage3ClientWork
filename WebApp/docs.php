@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,22 +8,16 @@
     <title>Documents</title>
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
-    <?php
-        session_start()
-    ?>
+
 </head>
 
 <body>
     <div class="container-mn">
         <div class="navbar-cont-mn">
-            <?php
-            include "includes/nav.php";
-            ?>
+            <?php include "includes/nav.php"; ?>
         </div>
         <div class="header-cont-mn">
-            <?php
-            include "includes/header.php";
-            ?>
+            <?php include "includes/header.php"; ?>
         </div>
         <div class="finhead-main-mn">
             <div class="content-top">
@@ -33,8 +28,11 @@
                         <th>Severity</th>
                         <th>Owner</th>
                         <th>Upload Date</th>
+                        <th>Action</th>
                     </tr>
-                    <?php include 'includes/get-filesall.php'; ?>
+                    <?php 
+                    include 'includes/get-filesall.php'; 
+                    ?>
                 </table>
             </div>
         </div>
