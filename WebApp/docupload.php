@@ -25,23 +25,23 @@ session_start()
             include "includes/header.php";
             ?>
         </div>
-
-
+    </div>
+        
         <div class="indexTestUpload">
             
-        <form class="docup-form" action="upload.php" method="post" enctype="multipart/form-data">
+         <form class="docup-form" action="upload.php" method="post" enctype="multipart/form-data">
                 <input type="file" name="file" required>
                 <select name="doc_severity" required>
                     <option value="LOW">LOW</option>
                     <option value="MEDIUM">MEDIUM</option>
                     <option value="HIGH">HIGH</option>
                 </select>
-                <input type="text" name="class" placeholder="Type of document" required>
+                <input type="text" name="class" placeholder="Document Name" required>
                 <input type="date" name="doc_due" required>
                 <input class="docup-submit" type="submit" value="Upload" style="margin-top: 10px;">
             </form>
         </div>
-    </div>
+   
 </body>
 
 </html>
