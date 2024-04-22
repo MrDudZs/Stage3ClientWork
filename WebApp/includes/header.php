@@ -6,6 +6,7 @@
                 <div class="dropdown-container-mn">
                     <button class="dropbtn-mn">
                         <?php
+
                         // Check if the user is logged in
                         if (isset($_SESSION['username'])) {
                             echo "Logged in:" . $_SESSION['username'];
@@ -49,7 +50,6 @@
                     <ul class="dropdown-sidenav-ul">
                         <li class="dropdown-sidenav-li"><a href="dashboard.php">Dashboard</a></li>
                         <li class="dropdown-sidenav-li"><a href="docupload.php">File Upload</a></li>
-                        <li class="dropdown-sidenav-li"><a href="admin.php">Admin</a></li>
                     </ul>
                 </div>
             </div>

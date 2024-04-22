@@ -62,6 +62,24 @@
                             ?>
                         </select>
                         <br>
+                        <select class="input" name="department_id" required>
+                            <option value="">Select Permission</option>
+                            <?php
+                            include "php/config.php";
+
+                            // Fetch permissions from the database
+                            $sql = "SELECT department_id, department_name FROM departments";
+                            $result = $conn->query($sql);
+
+                            // Loop through each row of permissions and create options for dropdown
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                                    echo "<option value='" . $row['department_id'] . "'>" . $row['department_name'] . "</option>";
+                                }
+                            }
+                            ?>
+                        </select>
+                        <br>
                         <br>
                         <input class="button" type="submit" value="Register">
                     </form>

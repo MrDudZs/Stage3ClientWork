@@ -31,9 +31,9 @@
                 <h2>Login</h2>
                 <div class="loginForm">
                     <form action="loginprocess.php" method="post">
-                        <input class="input" type="text" name="staffid" placeholder="staff id" required>
+                        <input class="login-input" type="text" name="staffid" placeholder="staff id" required>
                         <br>
-                        <input class="input" type="password" name="password" placeholder="password" required> <br>
+                        <input class="login-input" type="password" name="password" placeholder="password" required> <br>
                         <br>
                         <input class="button" type="submit" value="Login">
                     </form>

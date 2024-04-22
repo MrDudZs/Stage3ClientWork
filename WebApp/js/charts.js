@@ -1,29 +1,22 @@
- // Doughnut chart data
- var doughnutData = {
-    labels: ['Approved', 'Pending', 'Rejected'],
+// Doughnut chart data
+var doughnutData = {
+    labels: ['Pending', 'Approved', 'Rejected'],
     datasets: [{
-        data: [30, 20, 50],
-        backgroundColor: ['green', 'yellow', 'red']
+        label: 'Files',
+        data: [statusCounts[0], statusCounts[1], statusCounts[2]],
+        backgroundColor: ['yellow', 'green', 'red']
     }]
 };
 
+
 // Bar chart data
 var barData = {
-    labels: ['Approved', 'Pending', 'Rejected'],
+    labels: ['Pending', 'Approved', 'Rejected'],
     datasets: [{
-        label: 'Approved',
-        data: [30, 20, 50],
-        backgroundColor: 'rgb(6, 2, 112)',
-
-        label: 'Pending',
-        data: [30, 20, 50],
-        backgroundColor: 'rgb(255, 236, 161)',
-
-        label: 'Rejected',
-        data: [30, 20, 50],
-        backgroundColor: 'rgb(255, 236, 161)'
-    }],
-
+        label: 'Files',
+        data: [statusCounts[0], statusCounts[1], statusCounts[2]],
+        backgroundColor: ['yellow', 'green', 'red']
+    }]
 };
 
 // Get the context of the canvas elements

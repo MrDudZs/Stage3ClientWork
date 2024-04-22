@@ -7,7 +7,7 @@ include 'php/config.php';
 //Check connection
 
 if ($conn->connect_error) {
-    die ("connection failed: " . $conn->connect_error);
+    die("connection failed: " . $conn->connect_error);
 }
 
 // get form data
@@ -32,12 +32,14 @@ if ($result->num_rows == 1) {
             header("Location: login.php");
             exit;
         } else {
-            // Set session variables with user data
-            $_SESSION['staffid'] = $row['staffid'];
-            $_SESSION['username'] = $row['first_name'] . ' ' . $row['surname']; // Concatenate first name and surname to form username
-            $_SESSION['permission_id'] = $row['permission_id'];
-
             // Login successful
+            $_SESSION['staffid'] = $row['staffid'];
+            $_SESSION['username'] = $row['first_name'] . ' ' . $row['surname'];
+            $_SESSION['permission_id'] = $row['permission_id']; // Add this line for storing permission ID
+
+            // Debugging output
+            echo "Permission ID stored in session: " . $_SESSION['permission_id'];
+
             header("Location: dashboard.php");
             exit;
         }
