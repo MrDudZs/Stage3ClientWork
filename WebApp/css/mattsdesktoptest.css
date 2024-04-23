@@ -217,7 +217,21 @@ footer {
 
 /*Admin Page*/
 
+.request-notif {
+    margin: 15px auto;
+    background: white;
+    border: #128754 solid 2px;
+    width: 25%;
+    float: left;
+}
+
+
 /*Top Row*/
+.content-top {
+    display: flex;
+    flex-direction: column;
+}
+
 #top-management-row {
     display: flex;
     align-items: center;
@@ -230,20 +244,24 @@ footer {
 }
 
 .recordSummary-mn {
-    background-color: lightblue;
+    background-color: white;
+    border: #128754 solid;
 }
 
 .pendingRecords-mn {
-    background-color: lightblue;
+    background-color: white;
+    border: #128754 solid;
 }
+
+
 
 /*Pending Records Table*/
 
 .pendingRec-td.scroll-text {
-    max-width: 200px; /* Set maximum width for the cell */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent text from wrapping */
-    text-overflow:clip;
+    max-width: 200px;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-overflow: clip;
 }
 
 
@@ -268,11 +286,13 @@ footer {
 /*Bottom Row*/
 
 .analysis-mn {
-    background-color: lightblue;
+    background-color: white;
+    border: #128754 solid;
 }
 
 .recentTask-mn {
-    background-color: lightblue;
+    background-color: white;
+    border: #128754 solid;
 }
 
 .recentRecords-mn {
@@ -386,7 +406,8 @@ footer {
 
     cursor: pointer;
 }
-.login-input{
+
+.login-input {
     height: 25px;
     width: 165px;
 }
@@ -592,41 +613,47 @@ form {
 /* DOC UPLOAD SECTION */
 
 .indexTestUpload {
-  max-width: 900px;
-  margin: 0 auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .docup-form {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 25%;
+    margin: 15px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input[type="file"], select, input[type="text"], input[type="date"], .docup-submit[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  box-sizing: border-box;
+input[type="file"],
+select,
+input[type="text"],
+input[type="date"],
+.docup-submit[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 input[type="file"] {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .docup-submit[type="submit"] {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #128754;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .docup-submit[type="submit"]:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
