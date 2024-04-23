@@ -1,26 +1,27 @@
 <?php
-// Start session
+
 session_start();
 
-// Check if user is logged in
 if (!isset($_SESSION['staffid'])) {
-    // Redirect to login page if not logged in
+
     header("Location: login.php");
     exit;
 }
 
-// Connection
 include 'php/config.php';
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve current user ID from session
 $currentUserId = $_SESSION['staffid'];
 
-// Query to retrieve access requests for the current user
+$approve_date = date('Y-m-d'); 
+$approve_time = date('H:i:s'); 
+
+$sql = "INSERT INTO audit_log (date, time) 
+VALUES ('$approve_date', ' $approve_time')";
+
 $access_requests_query = "SELECT r.doc_id, r.request_time, d.doc_name, s.first_name, s.surname 
                           FROM request_access r
                           INNER JOIN uploaded_docs d ON r.doc_id = d.doc_id
