@@ -2,8 +2,16 @@
 session_start();
 include 'php/config.php';
 
-// Retrieve audit log data from the database
-$sql = "SELECT * FROM audit_log";
+// Retrieve doc_id from the URL parameter
+$doc_id = $_GET['doc_id'] ?? '';
+
+// Retrieve audit log data for the specific document from the database
+$sql = "SELECT audit_log.date, audit_log.time, CONCAT(staff.first_name, ' ', staff.surname) AS user, audit_log.change_description,
+               uploaded_docs.upload_date, uploaded_docs.upload_time
+        FROM audit_log
+        LEFT JOIN staff ON audit_log.staffid = staff.staffid
+        LEFT JOIN uploaded_docs ON audit_log.doc_id = uploaded_docs.doc_id
+        WHERE audit_log.doc_id = '$doc_id'";
 $result = $conn->query($sql);
 ?>
 
@@ -13,7 +21,7 @@ $result = $conn->query($sql);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document: Audit</title>
+    <title>Document Audit</title>
     <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/mattsdesktoptest.css" media="only screen and (min-width : 601px)" />
 </head>
@@ -34,10 +42,10 @@ $result = $conn->query($sql);
                         <!-- https://stackoverflow.com/a/13511806 -->
                     </div>
                     <div class="main-top">
-                        <h2> Document Audit </h2>
+                        <h2>Document Audit</h2>
                     </div>
                     <div class="audit-table">
-                        <!-- Displays who created - modified - viewed - added - downloaded file -->
+                        <!-- Displays audit log data for the specific document -->
                         <table>
                             <tr>
                                 <th>Date</th>
@@ -46,22 +54,17 @@ $result = $conn->query($sql);
                                 <th>Change</th>
                             </tr>
                             <?php
-                            $action = $_GET['action'] ?? 'unknown'; // Default to 'unknown' if action parameter is not provided
-                            
-                            // Display audit log data in table rows
                             if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
                                     echo "<tr>";
                                     echo "<td>" . $row["date"] . "</td>";
                                     echo "<td>" . $row["time"] . "</td>";
-                                    // Get username from session
-                                    $username = $_SESSION['username'];
-                                    echo "<td>" . $username . "</td>";
-                                    echo "<td>" . $row["change_description"] . " (" . $action . ")</td>";
+                                    echo "<td>" . $row["user"] . "</td>"; 
+                                    echo "<td>" . $row["change_description"] . "</td>";
                                     echo "</tr>";
                                 }
                             } else {
-                                echo "<tr><td colspan='4'>No audit log entries found</td></tr>";
+                                echo "<tr><td colspan='6'>No audit log entries found</td></tr>";
                             }
                             ?>
                         </table>
