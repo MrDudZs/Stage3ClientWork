@@ -30,13 +30,17 @@ session_start()
         <div class="indexTestUpload">
             
          <form class="docup-form" action="upload.php" method="post" enctype="multipart/form-data">
+                <span>Upload File:<span>
                 <input type="file" name="file" required>
+                <span>Doc Serverity:</span>
                 <select name="doc_severity" required>
                     <option value="LOW">LOW</option>
                     <option value="MEDIUM">MEDIUM</option>
                     <option value="HIGH">HIGH</option>
                 </select>
-                <input type="text" name="class" placeholder="Document Name" required>
+                <span>Document Type:</span>
+                <input type="text" name="class" placeholder="E.g. Budget" required>
+                <span>Date Approved:</span>
                 <input type="date" name="doc_due" required>
                 <input class="docup-submit" type="submit" value="Upload" style="margin-top: 10px;">
             </form>
