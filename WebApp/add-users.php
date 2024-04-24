@@ -77,8 +77,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="adduser-form-con">
                 <form method="post">
-                    <label for="staffid">Enter Staff ID of User to Add:</label>
-                    <input type="text" id="staffid" name="staffid" required>
+                    <label for="staffid">Shared Document Access:</label>
+                    <input type="text" id="staffid" name="staffid" placeholder="Staff Id" required>
                     <button type="submit">Add User</button>
                 </form>
                 <?php
