@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2024 at 03:15 AM
+-- Generation Time: Apr 24, 2024 at 06:36 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -67,7 +67,63 @@ INSERT INTO `audit_log` (`id`, `date`, `time`, `staffid`, `doc_id`, `change_desc
 (133, '2024-04-15', '03:03:47', 6, 41, 'Clicked view for document ID 41 by user ID 6'),
 (134, '2024-04-15', '03:09:01', 8, 43, 'Uploaded document: EDRMS - Mgmt Dashboard (Sample).pdf'),
 (135, '2024-04-15', '03:09:35', 9, 44, 'Uploaded document: ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx'),
-(136, '2024-04-15', '03:09:58', 10, 45, 'Uploaded document: ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx');
+(136, '2024-04-15', '03:09:58', 10, 45, 'Uploaded document: ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx'),
+(137, '2024-04-15', '03:24:53', 12, 46, 'Uploaded document: EDRMS - Mgmt Dashboard (Sample).png'),
+(138, '2024-04-15', '10:41:43', 6, 39, 'Clicked modify for document ID 39 by user ID 6'),
+(139, '2024-04-15', '10:41:46', 6, 39, 'Clicked view for document ID 39 by user ID 6'),
+(140, '2024-04-15', '10:42:46', 6, 39, 'Clicked view for document ID 39 by user ID 6'),
+(141, '2024-04-15', '10:43:11', 6, 39, 'Added user with staffid: 12 for document ID 39'),
+(142, '2024-04-15', '10:43:11', 6, 39, 'Added user with staffid: 12 for document ID 39'),
+(143, NULL, NULL, 9, 44, 'Approved access for document ID: 44'),
+(144, '2024-04-15', '10:48:24', 9, 47, 'Uploaded document: ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx'),
+(145, '2024-04-16', '08:45:28', 6, 39, 'Clicked view for document ID 39 by user ID 6'),
+(146, '2024-04-16', '08:45:30', 6, 39, 'Clicked view for document ID 39 by user ID 6'),
+(147, '2024-04-16', '11:14:50', 6, 39, 'Clicked modify for document ID 39 by user ID 6'),
+(148, '2024-04-16', '11:14:51', 6, 39, 'Clicked view for document ID 39 by user ID 6'),
+(149, '2024-04-16', '11:14:55', 6, 39, 'Clicked view for document ID 39 by user ID 6'),
+(150, '2024-04-16', '11:15:13', 6, 40, 'Clicked modify for document ID 40 by user ID 6'),
+(151, '2024-04-16', '11:15:13', 6, 40, 'Clicked view for document ID 40 by user ID 6'),
+(152, '2024-04-16', '15:30:19', 6, 39, 'Added user with staffid: 8 for document ID 39'),
+(153, '2024-04-16', '15:30:19', 6, 39, 'Added user with staffid: 8 for document ID 39'),
+(154, '2024-04-16', '15:32:53', 6, 48, 'Uploaded document: Screenshot 2023-10-04 171758.png'),
+(155, '2024-04-16', '15:59:06', 6, 48, 'Clicked modify for document ID 48 by user ID 6'),
+(156, '2024-04-16', '15:59:06', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(157, '2024-04-16', '15:59:13', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(158, '2024-04-16', '16:01:10', 6, 49, 'Uploaded document: Screenshot 2024-03-18 014049.png'),
+(159, '2024-04-18', '12:03:57', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(160, '2024-04-18', '12:04:16', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(161, '2024-04-18', '12:04:21', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(162, '2024-04-18', '12:07:45', 6, 48, 'Added user with staffid: 5 for document ID 48'),
+(163, '2024-04-18', '12:07:45', 6, 48, 'Added user with staffid: 5 for document ID 48'),
+(164, '2024-04-18', '12:12:46', 6, 50, 'Uploaded document: Screenshot 2023-10-04 171758.png'),
+(165, NULL, NULL, 6, 48, 'Approved access for document ID: 48'),
+(166, '2024-04-18', '16:05:48', 6, 51, 'Uploaded document: Screenshot 2023-03-08 021158.png'),
+(167, '2024-04-20', '14:11:23', 6, 48, 'Clicked modify for document ID 48 by user ID 6'),
+(168, '2024-04-20', '14:11:24', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(169, '2024-04-20', '14:11:31', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(170, NULL, NULL, 6, 48, 'Approved access for document ID: 48'),
+(171, NULL, NULL, 7, 40, 'Approved access for document ID: 40'),
+(172, NULL, NULL, 7, 41, 'Approved access for document ID: 41'),
+(173, '2024-04-23', '10:38:22', 7, 40, 'Added user with staffid: 5 for document ID 40'),
+(174, '2024-04-23', '10:38:22', 7, 40, 'Added user with staffid: 5 for document ID 40'),
+(175, NULL, NULL, 8, 43, 'Approved access for document ID: 43'),
+(176, NULL, NULL, 9, 47, 'Approved access for document ID: 47'),
+(177, NULL, NULL, 10, 45, 'Approved access for document ID: 45'),
+(178, '2024-04-23', '11:31:07', 6, 48, 'Clicked modify for document ID 48 by user ID 6'),
+(179, '2024-04-23', '11:31:10', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(180, '2024-04-23', '11:32:55', 6, 48, 'Clicked view for document ID 48 by user ID 6'),
+(181, '2024-04-23', '11:33:34', 6, 48, 'Added user with staffid: 15 for document ID 48'),
+(182, '2024-04-23', '11:33:45', 6, 48, 'Added user with staffid: 13 for document ID 48'),
+(183, '2024-04-23', '11:33:45', 6, 48, 'Added user with staffid: 13 for document ID 48'),
+(184, '2024-04-23', '11:38:59', 7, 52, 'Uploaded document: ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx'),
+(185, '2024-04-23', '11:42:59', 6, 40, 'Clicked modify for document ID 40 by user ID 6'),
+(186, '2024-04-23', '11:43:00', 6, 40, 'Clicked view for document ID 40 by user ID 6'),
+(187, '2024-04-23', '11:43:59', 6, 40, 'Clicked view for document ID 40 by user ID 6'),
+(188, '2024-04-23', '11:44:33', 6, 40, 'Added user with staffid: 14 for document ID 40'),
+(189, '2024-04-23', '11:44:33', 6, 40, 'Added user with staffid: 14 for document ID 40'),
+(190, '2024-04-23', '11:45:19', 6, 53, 'Uploaded document: ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx'),
+(191, NULL, NULL, 7, 52, 'Approved access for document ID: 52'),
+(192, NULL, NULL, 9, 47, 'Approved access for document ID: 47');
 
 -- --------------------------------------------------------
 
@@ -148,8 +204,13 @@ CREATE TABLE `document_access` (
 --
 
 INSERT INTO `document_access` (`doc_id`, `staff_id`) VALUES
-(40, 6),
-(41, 6);
+(41, 6),
+(41, 8),
+(43, 15),
+(45, 8),
+(47, 6),
+(47, 8),
+(52, 6);
 
 -- --------------------------------------------------------
 
@@ -159,17 +220,6 @@ INSERT INTO `document_access` (`doc_id`, `staff_id`) VALUES
 
 CREATE TABLE `files` (
   `file_name` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `finance_manager`
---
-
-CREATE TABLE `finance_manager` (
-  `ID` int(11) NOT NULL,
-  `Permission` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -248,7 +298,23 @@ CREATE TABLE `request_access` (
 --
 
 INSERT INTO `request_access` (`id`, `doc_id`, `staffid`, `request_date`, `status`, `request_time`) VALUES
-(40, 40, 6, '2024-04-15 01:01:24', 'approved', '00:00:00');
+(44, 41, 8, '2024-04-18 10:19:29', 'approved', '00:00:00'),
+(45, 42, 8, '2024-04-18 10:19:30', 'pending', '00:00:00'),
+(46, 45, 8, '2024-04-18 10:19:30', 'approved', '00:00:00'),
+(47, 46, 8, '2024-04-18 10:19:31', 'pending', '00:00:00'),
+(48, 47, 8, '2024-04-18 10:19:32', 'approved', '00:00:00'),
+(51, 41, 15, '2024-04-23 08:34:25', 'approved', '00:00:00'),
+(52, 42, 15, '2024-04-23 08:34:26', 'pending', '00:00:00'),
+(54, 43, 15, '2024-04-23 08:34:29', 'approved', '00:00:00'),
+(55, 45, 15, '2024-04-23 08:34:30', 'approved', '00:00:00'),
+(56, 47, 15, '2024-04-23 08:34:32', 'approved', '00:00:00'),
+(57, 46, 15, '2024-04-23 08:34:33', 'pending', '00:00:00'),
+(59, 52, 6, '2024-04-23 09:46:35', 'approved', '00:00:00'),
+(60, 45, 6, '2024-04-23 09:46:38', 'pending', '00:00:00'),
+(61, 43, 6, '2024-04-23 09:46:39', 'declined', '00:00:00'),
+(62, 42, 6, '2024-04-23 09:46:40', 'pending', '00:00:00'),
+(63, 46, 6, '2024-04-23 09:46:41', 'pending', '00:00:00'),
+(64, 47, 6, '2024-04-23 09:46:42', 'approved', '00:00:00');
 
 -- --------------------------------------------------------
 
@@ -293,7 +359,12 @@ INSERT INTO `staff` (`staffid`, `first_name`, `surname`, `email`, `dob`, `passwo
 (8, 'FINANCE', 'OFFICER', 'm@t.t', '2024-04-12', '$2y$10$mbHHtK.8nPKuUIErnD3hcO48SM2lnudS6uPYfPkC75jusbQhGh4NC', 0, 'Finance Officer', 4, 1),
 (9, 'OTHER', 'USER', 'm@t.t', '2024-04-12', '$2y$10$VR9SBMmRvSFChzHg1fZAMe.vse/ayQBlViq1XaJsxewFO4CgcfrM2', 0, 'Human Resources', 5, 18),
 (10, 'FINANCE', 'OFFICER', 'test@test.test', '2024-04-12', '$2y$10$ZXyIiAUsVRttImMuRxCMZ.XEtT7EAQNGqiTO8xMUWydBwdOzUeJLq', 0, 'Finance Officer', 4, 1),
-(11, 'Test', 'Test', 'test@test.test', '2024-04-13', '$2y$10$DXoaey0NdbbY9xPzrDiBdOyxypydW2hQqixcUCO9iCT3yCh594zT6', 0, 'HR', 5, 18);
+(11, 'Test', 'Test', 'test@test.test', '2024-04-13', '$2y$10$DXoaey0NdbbY9xPzrDiBdOyxypydW2hQqixcUCO9iCT3yCh594zT6', 0, 'HR', 5, 18),
+(12, 'Matt', 'Dudley', 'test@test.test', '2001-09-25', '$2y$10$5NXwiO5vXZRbMABVcTztqOW9ItCOCvrMBzqZ/yuWoONOaBhn3h6kO', 0, 'Head of Finance', 2, 44),
+(13, 'Nasir', 'Al-Monsir', 'Test@test.t', '2024-04-14', '$2y$10$Y5Gt3kX7b2QjGXSjwFBMkOVugXQl3i4c246..SMwHEV98ue5zZ37q', 0, '', 3, 44),
+(14, 'Ben', 'Wiffen', 'test@test.t', '2024-04-15', '$2y$10$DgV0MVp327ESe33ELzLLTed4eTwCPY6avXuEnF/MP37zybQ.qpY8u', 0, '', 4, 44),
+(15, 'Bob', 'Ross', 'test@test.test', '2024-04-22', '$2y$10$rx9TD3HfCgUPx.PEpLaL/.2semnm3ybDH8Oe4zoSE7p8AfPZ64SMG', 0, '0', 5, 32),
+(16, 'Customer', 'Service', 'l@l.t', '2024-01-22', '$2y$10$62Huzo/ZPEgyN6EyOROuEOM3nJ6lMjpXzduCtI8n8iDwGOmKbyK5W', 0, '0', 5, 20);
 
 -- --------------------------------------------------------
 
@@ -319,13 +390,14 @@ CREATE TABLE `uploaded_docs` (
 --
 
 INSERT INTO `uploaded_docs` (`doc_id`, `doc_name`, `doc_owner`, `doc_severity`, `upload_date`, `staff_id`, `file_status`, `doc_class`, `doc_due`, `upload_time`) VALUES
-(39, 'EDRMS - Mgmt Dashboard (Sample).pdf', 'HEAD of FINANCE', 'MEDIUM', '2024-04-15', 6, 1, 'Budget', '2024-04-23', '02:36:15'),
-(40, 'EDRMS - Mgmt Dashboard (Sample).png', 'FINANCE MANAGER', 'MEDIUM', '2024-04-15', 7, 0, 'Budget', '2024-04-24', '02:36:57'),
-(41, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'FINANCE MANAGER', 'MEDIUM', '2024-04-15', 7, 0, 'Budget', '2024-04-23', '02:37:20'),
-(42, 'EDRMS - Mgmt Dashboard (Sample).png', 'Test Test', 'LOW', '2024-04-15', 11, 0, 'Budget', '2024-04-26', '02:59:08'),
-(43, 'EDRMS - Mgmt Dashboard (Sample).pdf', 'FINANCE OFFICER', 'LOW', '2024-04-15', 8, 0, 'Budget', '2024-04-25', '03:09:01'),
-(44, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'OTHER USER', 'LOW', '2024-04-15', 9, 0, 'Procurement', '2024-04-30', '03:09:35'),
-(45, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'FINANCE OFFICER', 'MEDIUM', '2024-04-15', 10, 0, 'Budget', '2024-05-02', '03:09:58');
+(41, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'FINANCE MANAGER', 'MEDIUM', '2024-04-15', 7, 1, 'Budget', '2024-04-23', '02:37:20'),
+(42, 'EDRMS - Mgmt Dashboard (Sample).png', 'Test Test', 'LOW', '2024-04-15', 11, 2, 'Budget', '2024-04-26', '02:59:08'),
+(43, 'EDRMS - Mgmt Dashboard (Sample).pdf', 'FINANCE OFFICER', 'LOW', '2024-04-15', 8, 2, 'Budget', '2024-04-25', '03:09:01'),
+(45, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'FINANCE OFFICER', 'MEDIUM', '2024-04-15', 10, 2, 'Budget', '2024-05-02', '03:09:58'),
+(46, 'EDRMS - Mgmt Dashboard (Sample).png', 'Matt Dudley', 'HIGH', '2024-04-15', 12, 1, 'Budget', '2024-04-15', '03:24:53'),
+(47, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'OTHER USER', 'HIGH', '2024-04-15', 9, 1, 'Budget', '2024-06-02', '10:48:24'),
+(52, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'FINANCE MANAGER', 'HIGH', '2024-04-23', 7, 1, 'Budget', '2024-04-24', '11:38:59'),
+(53, 'ELECTRONIC DOCUMENT AND RECORDS MANAGEMENT SYSTEM (EDRMS) 2024 V2 (1).pptx', 'HEAD of FINANCE', 'HIGH', '2024-04-23', 6, 2, 'Budget', '2024-04-24', '11:45:19');
 
 --
 -- Indexes for dumped tables
@@ -349,13 +421,6 @@ ALTER TABLE `departments`
 ALTER TABLE `document_access`
   ADD PRIMARY KEY (`doc_id`,`staff_id`),
   ADD KEY `staff_id` (`staff_id`);
-
---
--- Indexes for table `finance_manager`
---
-ALTER TABLE `finance_manager`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `Permission` (`Permission`);
 
 --
 -- Indexes for table `job_roles`
@@ -413,19 +478,13 @@ ALTER TABLE `uploaded_docs`
 -- AUTO_INCREMENT for table `audit_log`
 --
 ALTER TABLE `audit_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=193;
 
 --
 -- AUTO_INCREMENT for table `departments`
 --
 ALTER TABLE `departments`
   MODIFY `department_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
-
---
--- AUTO_INCREMENT for table `finance_manager`
---
-ALTER TABLE `finance_manager`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `job_roles`
@@ -449,7 +508,7 @@ ALTER TABLE `permissions`
 -- AUTO_INCREMENT for table `request_access`
 --
 ALTER TABLE `request_access`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `shared_access`
@@ -461,13 +520,13 @@ ALTER TABLE `shared_access`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staffid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `staffid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `uploaded_docs`
 --
 ALTER TABLE `uploaded_docs`
-  MODIFY `doc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `doc_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- Constraints for dumped tables
@@ -479,12 +538,6 @@ ALTER TABLE `uploaded_docs`
 ALTER TABLE `document_access`
   ADD CONSTRAINT `document_access_ibfk_1` FOREIGN KEY (`doc_id`) REFERENCES `uploaded_docs` (`doc_id`),
   ADD CONSTRAINT `document_access_ibfk_2` FOREIGN KEY (`staff_id`) REFERENCES `staff` (`staffid`);
-
---
--- Constraints for table `finance_manager`
---
-ALTER TABLE `finance_manager`
-  ADD CONSTRAINT `finance_manager_ibfk_1` FOREIGN KEY (`Permission`) REFERENCES `manager_permission` (`ID`);
 
 --
 -- Constraints for table `request_access`
