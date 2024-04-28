@@ -35,10 +35,7 @@ if ($result->num_rows == 1) {
             // Login successful
             $_SESSION['staffid'] = $row['staffid'];
             $_SESSION['username'] = $row['first_name'] . ' ' . $row['surname'];
-            $_SESSION['permission_id'] = $row['permission_id']; // Add this line for storing permission ID
-
-            // Debugging output
-            echo "Permission ID stored in session: " . $_SESSION['permission_id'];
+            $_SESSION['permission_id'] = $row['permission_id'];
 
             header("Location: dashboard.php");
             exit;
