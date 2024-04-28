@@ -80,8 +80,8 @@ $conn->close();
                             <th>Document Name</th>
                             <th>Severity</th>
                             <th>Upload Date</th>
-                            <th>DELETE</th>
-                            <th>ACCESS</th>
+                            <th>Delete</th>
+                            <th>Access</th>
                         </tr>
                         <?php include 'includes/get-files.php'; ?>
                     </table>
@@ -94,7 +94,7 @@ $conn->close();
                         <th>Document Name</th>
                         <th>Severity</th>
                         <th>Upload Date</th>
-                        <th>ACCESS</th>
+                        <th>Access</th>
                     </tr>
                     <?php include 'includes/get-filesShared.php'; ?>
                 </table>
