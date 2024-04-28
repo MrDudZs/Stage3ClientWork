@@ -49,7 +49,6 @@
                             <?php
                             include "php/config.php";
 
-                            // Fetch permissions from the database
                             $sql = "SELECT permission_id, permission_name FROM permissions";
                             $result = $conn->query($sql);
 
@@ -66,8 +65,7 @@
                             <option value="">Select Permission</option>
                             <?php
                             include "php/config.php";
-
-                            // Fetch permissions from the database
+                            
                             $sql = "SELECT department_id, department_name FROM departments";
                             $result = $conn->query($sql);
 
