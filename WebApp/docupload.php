@@ -40,7 +40,7 @@ session_start()
                 </select>
                 <span>Document Type:</span>
                 <input type="text" name="class" placeholder="E.g. Budget" required>
-                <span>Date Approved:</span>
+                <span>Date Due:</span>
                 <input type="date" name="doc_due" required>
                 <input class="docup-submit" type="submit" value="Upload" style="margin-top: 10px;">
             </form>
