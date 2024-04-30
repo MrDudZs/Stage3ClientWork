@@ -1,6 +1,6 @@
 <?php
 session_start()
-?>
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,24 +15,17 @@ session_start()
 
 <body>
     <div class="container-mn">
-    <div class="navbar-cont-mn">
-            <?php
-            include "includes/nav.php";
-            ?>
+        <div class="navbar-cont-mn">
+            <?php include "includes/nav.php"; ?>
         </div>
-        <div class="header-cont-mn">
-            <?php
-            include "includes/header.php";
-            ?>
+        <div class="header-mn header-mb">
+            <?php include "includes/header.php"; ?>
         </div>
     </div>
-    
-  
-
-
+    <?php
+    include "includes/footer.php";
+    ?>
 </body>
-            <?php
-            include "includes/footer.php";
-            ?>
+
 
 </html>
