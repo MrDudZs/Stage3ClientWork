@@ -16,8 +16,8 @@ if ($conn->connect_error) {
 
 $currentUserId = $_SESSION['staffid'];
 
-$approve_date = date('Y-m-d'); 
-$approve_time = date('H:i:s'); 
+$approve_date = date('Y-m-d');
+$approve_time = date('H:i:s');
 
 $sql = "INSERT INTO audit_log (date, time) 
 VALUES ('$approve_date', ' $approve_time')";
@@ -46,14 +46,10 @@ $conn->close();
 <body>
     <div class="container-mn">
         <div class="navbar-cont-mn">
-            <?php
-            include "includes/nav.php";
-            ?>
+            <?php include "includes/nav.php"; ?>
         </div>
-        <div class="header-cont-mn">
-            <?php
-            include "includes/header.php";
-            ?>
+        <div class="header-mn header-mb">
+            <?php include "includes/header.php"; ?>
         </div>
         <div class="finhead-main-mn">
             <div class="content-top">
@@ -73,13 +69,15 @@ $conn->close();
                     }
                     ?>
                 </div>
-                <div class="finhead-toptable">
-                    <h3> My Documents: </h3>
-                    <table>
+                <div class="finhead-top">
+                    <div class="table-title">
+                        <h3> My Documents: </h3>
+                    </div>
+                    <table class="finhead-toptable">
                         <tr>
                             <th>Document Name</th>
                             <th>Severity</th>
-                            <th>Upload Date</th>
+                            <th class="docs-th">Upload Date</th>
                             <th>Delete</th>
                             <th>Access</th>
                         </tr>
@@ -88,7 +86,9 @@ $conn->close();
                 </div>
             </div>
             <div class="content-bottom">
-                <h3> Shared Documents </h3>
+                <div class="table-title">
+                    <h3> Shared Documents </h3>
+                </div>
                 <table>
                     <tr>
                         <th>Document Name</th>
@@ -99,6 +99,11 @@ $conn->close();
                     <?php include 'includes/get-filesShared.php'; ?>
                 </table>
             </div>
+        </div>
+        <div class="footer-container-mn" style="position: absolute; bottom: -100%">
+            <?php
+            include "includes/footer.php";
+            ?>
         </div>
     </div>
 </body>
