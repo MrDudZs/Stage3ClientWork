@@ -16,28 +16,36 @@
         <div class="navbar-cont-mn">
             <?php include "includes/nav.php"; ?>
         </div>
-        <div class="header-cont-mn">
+        <div class="header-mn header-mb">
             <?php include "includes/header.php"; ?>
         </div>
         <div class="finhead-main-mn">
             <div class="content-top">
-                <h3> Documents on system: </h3>
+                <div class="table-title">
+                    <h3> Documents on system: </h3>
+                </div>
                 <table>
                     <tr>
-                        <th>Document Name</th>
-                        <th>Severity</th>
-                        <th>Owner</th>
-                        <th>Upload Date</th>
-                        <th>Action</th>
+                        <th class="docs-th">Document Name</th>
+                        <th class="docs-th">Severity</th>
+                        <th class="docs-th">Owner</th>
+                        <th class="docs-th">Upload Date</th>
+                        <th class="docs-th">Action</th>
                     </tr>
-                    <?php 
-                    include 'includes/get-filesall.php'; 
+                    <?php
+                    include 'includes/get-filesall.php';
                     ?>
                 </table>
             </div>
+        </div>
+        <div class="footer-container-mn" style="position: absolute; bottom: -100%">
+            <?php
+            include "includes/footer.php";
+            ?>
         </div>
     </div>
 </body>
 
 <script src="js/deletefiles.js"></script>
+
 </html>
