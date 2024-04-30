@@ -272,9 +272,9 @@ $conn->close();
         </div>
 
 
-        <div class="footer-container-mn">
+        <div class="footer-container-mn" style="position: absolute; bottom: -100%">
             <?php
-            //   include "includes/footer.php";
+            include "includes/footer.php";
             ?>
         </div>
     </div>
