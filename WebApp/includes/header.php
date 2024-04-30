@@ -27,7 +27,7 @@
                 <div class="searchbar-content-mn">
                     <form action="action_page.php">
                         <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                        <button class="searchbar-btn" type="submit"></button>
                     </form>
                 </div>
             </div>
@@ -57,3 +57,16 @@
     </div>
 
 </header>
+
+
+<style>
+.searchbar-content-mn button {
+  float: right;
+  padding: 15px 10px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  height: 32px;
+}
+</style>
